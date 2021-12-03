@@ -1,0 +1,27 @@
+.card {
+  position: relative;
+  margin-top: 15px;
+}
+
+.card_wrapper {
+  background-color: aquamarine;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.card_footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button_size {
+  text-align: center;
+  height: 2.4rem;
+  width: 6rem;
+}
+
+.card_image {
+  width: 286px;
+  height: 180px;
+}

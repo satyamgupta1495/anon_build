@@ -1,9 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.nav {
-  /* background-color: yellow; */
-  width: "50%";
+.container_button {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between;
+  align-items: flex-start; */
+  /* width: 250px; */
+  /* left: 0; */
+  /* background-color: aqua; */
 }

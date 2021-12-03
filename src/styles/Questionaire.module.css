@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  font-family: "Verdana", cursive, sans-serif;
+  color: #ffffff;
+}
+.main {
+  background-color: #97adff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app1 {
+  background-color: #252d4a;
+  /* width: 100%;
+  height: 100vh; */
+  width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  background-color: #35416d;
+  align-items: center;
+  align-self: flex-start;
+  width: 100%;
+  min-height: 50px;
+  font-size: larger;
+  border-radius: 10px;
+}
+
+.question_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  /* background-color: #ff3333; */
+}
+
+.score_section {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.question_section {
+  width: 100%;
+  position: relative;
+  /* background-color: #2f922f; */
+}
+
+.question_count {
+  margin-bottom: 20px;
+}
+
+.question_count span {
+  font-size: 28px;
+}
+
+.question_text {
+  margin-bottom: 12px;
+}
+
+.timer_text {
+  background: rgb(230, 153, 12);
+  padding: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 5px solid rgb(255, 189, 67);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.answer_section {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid #234668;
+  cursor: pointer;
+}
+
+.correct {
+  background-color: #2f922f;
+}
+
+.incorrect {
+  background-color: #ff3333;
+}
+
+button:hover {
+  background-color: #555e7d;
+}
+
+button:focus {
+  outline: none;
+}
+
+button svg {
+  margin-right: 5px;
+}
