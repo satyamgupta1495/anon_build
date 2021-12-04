@@ -14,7 +14,12 @@ function App() {
         <Route path="/" element={<Tipoff />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Questionaire" element={<Questionaire />} />
-        {/* <Main /> */}
+        <Route 
+          path="/image-upload"  
+          element={<Tipoff view={'image'}/>}
+        />
+        <Route path="/text-upload" element={<Tipoff view={'text'}/>} />
+        <Route path="/audio-upload" element={<Tipoff view={'audio'}/>} />
       </Routes>
     </>
   );
