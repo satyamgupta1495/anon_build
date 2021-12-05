@@ -35,7 +35,7 @@ class Tipoff extends React.Component {
     this.setState({ audioDetails: data });
   }
   handleAudioUpload(file) {
-    console.log(file);
+    console.log("file",file);
   }
 
   handleCountDown(data) {
@@ -55,32 +55,26 @@ class Tipoff extends React.Component {
     };
     this.setState({ audioDetails: reset });
   }
-
-  render() {
-    return (
-      <Container className={styles.container}>
-        <form onSubmit="submitForm">
-          <label>Enter the TipOff: </label>
-          <br />
-          <br />
-          <input className={styles.textInput} placeholder="Enter the text" />
-          {/* image uplaoder */}
-          <ImageUploader
-            className={styles.imageUpload}
-            // style={{ padding: "20px" }}
-            withIcon={false}
-            onChange={this.onDrop}
-            imgExtension={[".jpg", ".gif", ".png", ".gif"]}
-            maxFileSize={5242880}
-            withLabel={true}
-            withPreview={true}
-            buttonText="Choose images"
-          >
-            <h1>aqcoajcaj</h1>
-            <div className={styles.imageUpload}></div>
-          </ImageUploader>
-
-          <Recorder
+  renderView(){
+    const {view} = this.props;
+    if(view === 'image'){
+      return <ImageUploader
+      className={styles.imageUpload}
+      // style={{ padding: "20px" }}
+      withIcon={false}
+      onChange={this.onDrop}
+      imgExtension={[".jpg", ".gif", ".png", ".gif"]}
+      maxFileSize={5242880}
+      withLabel={true}
+      withPreview={true}
+      buttonText="Choose images"
+    >
+      <h1>aqcoajcaj</h1>
+      <div className={styles.imageUpload}></div>
+      </ImageUploader>
+    }
+    else if(view === 'audio'){
+      return <Recorder
             className={styles.recorder}
             record={true}
             audioURL={this.state.audioDetails.url}
@@ -91,7 +85,20 @@ class Tipoff extends React.Component {
             handleReset={() => this.handleReset()}
             // mimeTypeToUseWhenRecording={"audio/mpeg"} // For specific mimetype.
             uploadButtonDisabled={true}
-          />
+      />
+    }else{
+      return
+    }
+  }
+
+  render() {
+    const {view} = this.props
+    return (
+      <Container className={styles.container}>
+        <form onSubmit="submitForm">
+          {view === 'text'? <input className={styles.textInput} placeholder="Enter the text" />:null}
+          {this.renderView()}
+          {/* image uplaoder */}
           <button className={styles.submit_button}>Submit</button>
         </form>
       </Container>

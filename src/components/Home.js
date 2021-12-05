@@ -3,6 +3,7 @@ import { Card, Button, CardGroup } from "react-bootstrap";
 import styles from "../styles/Home.module.css";
 import text from "../asset/img/text.svg";
 import audio from "../asset/img/audio.svg";
+import { Link } from "react-router-dom";
 import image from "../asset/img/image.svg";
 
 function Home() {
@@ -18,9 +19,11 @@ function Home() {
           </Card.Text>
         </Card.Body>
         <Card.Footer className={styles.card_footer}>
-          <Button className={styles.button_size} variant="primary">
-            TEXT
-          </Button>
+          <Link to={'/text-upload'}>
+            <Button className={styles.button_size} variant="primary">
+              TEXT
+            </Button>
+          </Link>
         </Card.Footer>
       </Card>
       <Card className={styles.card_wrapper} bg="success" text="dark">
@@ -33,9 +36,11 @@ function Home() {
           </Card.Text>
         </Card.Body>
         <Card.Footer className={styles.card_footer}>
+        <Link to={'/audio-upload'}>
           <Button className={styles.button_size} variant="primary">
             AUDIO
           </Button>
+        </Link>
         </Card.Footer>
       </Card>
       <Card className={styles.card_wrapper} bg="success" text="dark">
@@ -49,9 +54,11 @@ function Home() {
           </Card.Text>
         </Card.Body>
         <Card.Footer className={styles.card_footer}>
+        <Link to={'/image-upload'}>
           <Button className={styles.button_size} variant="primary">
             IMAGE
           </Button>
+        </Link>
         </Card.Footer>
       </Card>
     </CardGroup>
