@@ -25,19 +25,28 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: 40px;
+  height: 100px;
   width: 100px;
   color: black;
-  background-color: aliceblue;
+  background-color: rgb(243, 243, 243);
+  border-radius: 50%;
   /* border: 2px solid #ffffff; */
+}
+
+.btn_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  /* background-color: rgb(255, 3, 3); */
 }
 
 .recorder {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: brown; */
+  background-color: brown;
 }
 
 .textInput {

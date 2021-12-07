@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+// import styles from "../../styles/Style.module.css";
 import { Navbar, Stack, Button, Container, Nav } from "react-bootstrap";
-import styles from "../../styles/Style.module.css";
+import { Link } from "react-router-dom";
 import logo from "../../asset/img/col.png";
 
 const HomeNav = () => {
@@ -16,14 +17,32 @@ const HomeNav = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link Link to="/">
-              Home
+            <Nav.Link>
+              <Link
+                style={{ color: "inherit", textDecoration: "inherit" }}
+                to="/"
+              >
+                Home
+              </Link>
             </Nav.Link>
             <Nav.Link Link to="#link">
               About us
             </Nav.Link>
-            <Nav.Link Link to="/Questionaire">
-              Questionaire
+            <Nav.Link>
+              <Link
+                style={{ color: "inherit", textDecoration: "inherit" }}
+                to="/questionaire"
+              >
+                Questionaire
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                style={{ color: "inherit", textDecoration: "inherit" }}
+                to="#link"
+              >
+                How to use
+              </Link>
             </Nav.Link>
             {/* <NavDropdown title="More" id="basic-nav-dropdown">
               <NavDropdown.Item Link to="#action/3.1">
@@ -50,6 +69,7 @@ const HomeNav = () => {
               </Button>
             </div> */}
             <Stack direction="horizontal" gap={3}>
+              <h6>Login as:</h6>
               <div>
                 <Button variant="primary" size="sm">
                   User
