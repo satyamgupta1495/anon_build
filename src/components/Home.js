@@ -3,8 +3,8 @@ import { Card, Button, CardGroup } from "react-bootstrap";
 import styles from "../styles/Home.module.css";
 import text from "../asset/img/text.svg";
 import audio from "../asset/img/audio.svg";
-import { Link } from "react-router-dom";
 import image from "../asset/img/image.svg";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (

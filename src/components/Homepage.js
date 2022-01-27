@@ -7,9 +7,9 @@ const Homepage = () => {
   return (
     <>
       <Container fluid className={styles.card_container}>
-        <marquee>
+        {/* <marquee>
           देश की सुरक्षा आपके हाथ में, आपकी सुरक्षा हमारा कर्त्तव्य
-        </marquee>
+        </marquee> */}
         <Row>
           <Col>
             <Card className={styles.card_body}>

@@ -25,8 +25,13 @@ const HomeNav = () => {
                 Home
               </Link>
             </Nav.Link>
-            <Nav.Link Link to="#link">
-              About us
+            <Nav.Link>
+              <Link
+                style={{ color: "inherit", textDecoration: "inherit" }}
+                to="/about"
+              >
+                About
+              </Link>
             </Nav.Link>
             <Nav.Link>
               <Link
@@ -71,14 +76,21 @@ const HomeNav = () => {
             <Stack direction="horizontal" gap={3}>
               <h6>Login as:</h6>
               <div>
-                <Button variant="primary" size="sm">
-                  User
-                </Button>{" "}
+                <a href="/Login">
+                  <Button variant="primary" size="sm">
+                    User
+                  </Button>{" "}
+                </a>
               </div>
               <div>
-                <Button variant="danger" size="sm">
-                  Official
-                </Button>
+                <Link
+                  style={{ color: "inherit", textDecoration: "inherit" }}
+                  to="/dash"
+                >
+                  <Button variant="danger" size="sm">
+                    Official
+                  </Button>
+                </Link>
               </div>
             </Stack>
           </Nav>
