@@ -3,7 +3,7 @@ import ImageUploader from "react-images-upload";
 import Recorder from "./Recorder";
 import { Container } from "react-bootstrap";
 import styles from "../styles/Tipoff.module.css";
-import Homepage from "./Homepage";
+// import Homepage from "./Homepage";
 // import "./App.css";
 // import { Axios } from "axios";
 
