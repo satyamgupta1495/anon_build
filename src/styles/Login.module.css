@@ -17,4 +17,20 @@
 
 .button {
   margin-top: 15px;
+
+}
+
+.or {
+  padding-top: 2px;
+  /* background-color: blueviolet; */
+  width: 100%;
+  text-align: center;
+}
+
+.createButton {
+  background-color: #060f31;
+  /* background-color: #252d4a; */
+  justify-content: space-between;
+  min-width: 400px;
+  border-radius: 10px;
 }

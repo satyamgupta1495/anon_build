@@ -1,10 +1,10 @@
-import React from "react";
-import { Card, Button, CardGroup } from "react-bootstrap";
-import styles from "../styles/Home.module.css";
-import text from "../asset/img/text.svg";
-import audio from "../asset/img/audio.svg";
-import image from "../asset/img/image.svg";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Card, Button, CardGroup } from "react-bootstrap"
+import styles from "../styles/Home.module.css"
+import text from "../asset/img/text.svg"
+import audio from "../asset/img/audio.svg"
+import image from "../asset/img/image.svg"
+import { Link } from "react-router-dom"
 
 function Home() {
   return (
@@ -20,7 +20,7 @@ function Home() {
           </Card.Text>
         </Card.Body>
         <Card.Footer className={styles.card_footer}>
-          <Link  to={"/text-upload"}>
+          <Link to={"/text-upload"}>
             <Button className={styles.button_size} variant="primary">
               TEXT
             </Button>
@@ -38,7 +38,8 @@ function Home() {
           </Card.Text>
         </Card.Body>
         <Card.Footer className={styles.card_footer}>
-          <Link to={"/audio-upload"}>
+          {/* <Link to={"/audio-upload"}> */}
+          <Link to={"/tipoff_audio"}>
             <Button className={styles.button_size} variant="primary">
               AUDIO
             </Button>
@@ -58,7 +59,7 @@ function Home() {
           </Card.Text>
         </Card.Body>
         <Card.Footer className={styles.card_footer}>
-          <Link to={"/image-upload"}>
+          <Link to={"/tipoff_image"}>
             <Button className={styles.button_size} variant="primary">
               IMAGE
             </Button>
@@ -66,7 +67,7 @@ function Home() {
         </Card.Footer>
       </Card>
     </CardGroup>
-  );
+  )
 }
 
-export default Home;
+export default Home

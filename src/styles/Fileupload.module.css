@@ -1,0 +1,20 @@
+.main {
+  padding-top: 20%;
+  /* background-color: violet; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100vw;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: blueviolet;
+  height: 20vh;
+  width: 50vw;
+}
