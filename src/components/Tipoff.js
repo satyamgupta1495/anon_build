@@ -4,8 +4,10 @@ import ImageUploader from "react-images-upload"
 import { Container } from "react-bootstrap"
 import styles from "../styles/Tipoff.module.css"
 // import Homepage from "./Homepage";
+
 // import "./App.css";
 // import { Axios } from "axios";
+// import { Axios } from "axios"
 
 class Tipoff extends React.Component {
   constructor(props) {
@@ -71,26 +73,9 @@ class Tipoff extends React.Component {
           withPreview={true}
           buttonText="Choose images"
         ></ImageUploader>
-      )
-    }
-    // } else if (view === "audio") {
-    //   return (
-    //     <Recorder
-    //       className={styles.recorder}
-    //       record={true}
-    //       audioURL={this.state.audioDetails.url}
-    //       showUIAudio
-    //       handleAudioStop={(data) => this.handleAudioStop(data)}
-    //       handleAudioUpload={(data) => this.handleAudioUpload(data)}
-    //       handleCountDown={(data) => this.handleCountDown(data)}
-    //       handleReset={() => this.handleReset()}
-    //       // mimeTypeToUseWhenRecording={"audio/mpeg"} // For specific mimetype.
-    //       uploadButtonDisabled={true}
-    //     />
-    //   );
-    // }
-    else {
-      return
+      );
+    } else {
+      return;
     }
   }
 
