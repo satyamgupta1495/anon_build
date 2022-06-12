@@ -7,6 +7,7 @@ import styles from "../styles/Tipoff.module.css"
 
 // import "./App.css";
 // import { Axios } from "axios";
+// import { Axios } from "axios"
 
 class Tipoff extends React.Component {
   constructor(props) {
