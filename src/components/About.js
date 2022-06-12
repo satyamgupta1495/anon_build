@@ -1,11 +1,11 @@
-import React from "react";
-import { CardGroup, Card } from "react-bootstrap";
-import styles from "../styles/About.module.css";
-import { Link } from "react-router-dom";
-import logo1 from "../asset/official_logo/logo1 (1).jpeg";
-import logo2 from "../asset/official_logo/logo1 (2).jpeg";
-import logo3 from "../asset/official_logo/logo1 (3).jpeg";
-import logo4 from "../asset/official_logo/logo1 (4).jpeg";
+import React from "react"
+import { CardGroup, Card } from "react-bootstrap"
+import styles from "../styles/About.module.css"
+import { Link } from "react-router-dom"
+import logo1 from "../asset/official_logo/logo1 (1).jpeg"
+import logo2 from "../asset/official_logo/logo1 (2).jpeg"
+import logo3 from "../asset/official_logo/logo1 (3).jpeg"
+import logo4 from "../asset/official_logo/logo1 (4).jpeg"
 
 function About() {
   return (
@@ -54,7 +54,7 @@ function About() {
         </Card>
       </CardGroup>
     </>
-  );
+  )
 }
 
-export default About;
+export default About

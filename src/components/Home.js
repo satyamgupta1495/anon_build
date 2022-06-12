@@ -20,7 +20,7 @@ function Home() {
           </Card.Text>
         </Card.Body>
         <Card.Footer className={styles.card_footer}>
-          <Link to={"/text-upload"}>
+          <Link to={"/tipoff_text"}>
             <Button className={styles.button_size} variant="primary">
               TEXT
             </Button>
