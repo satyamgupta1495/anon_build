@@ -1,15 +1,16 @@
-import React from "react";
-import ImageUploader from "react-images-upload";
+import React from "react"
+import ImageUploader from "react-images-upload"
 // import Recorder from "./Recorder";
-import { Container } from "react-bootstrap";
-import styles from "../styles/Tipoff.module.css";
-// import Homepage from "./Homepage"; 
+import { Container } from "react-bootstrap"
+import styles from "../styles/Tipoff.module.css"
+// import Homepage from "./Homepage";
+
 // import "./App.css";
 // import { Axios } from "axios";
 
 class Tipoff extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       pictures: [],
       audioDetails: {
@@ -22,25 +23,25 @@ class Tipoff extends React.Component {
           s: 0,
         },
       },
-    };
-    this.onDrop = this.onDrop.bind(this);
+    }
+    this.onDrop = this.onDrop.bind(this)
   }
 
   onDrop(picture) {
     this.setState({
       pictures: this.state.pictures.concat(picture),
-    });
+    })
   }
   handleAudioStop(data) {
-    console.log(data);
-    this.setState({ audioDetails: data });
+    console.log(data)
+    this.setState({ audioDetails: data })
   }
   handleAudioUpload(file) {
-    console.log("file", file);
+    console.log("file", file)
   }
 
   handleCountDown(data) {
-    console.log(data);
+    console.log(data)
   }
 
   handleReset() {
@@ -53,11 +54,11 @@ class Tipoff extends React.Component {
         m: 0,
         s: 0,
       },
-    };
-    this.setState({ audioDetails: reset });
+    }
+    this.setState({ audioDetails: reset })
   }
   renderView() {
-    const { view } = this.props;
+    const { view } = this.props
     if (view === "image") {
       return (
         <ImageUploader
@@ -72,28 +73,13 @@ class Tipoff extends React.Component {
           buttonText="Choose images"
         ></ImageUploader>
       );
-    } /* else if (view === "audio") {
-      return (
-        <Recorder
-          className={styles.recorder}
-          record={true}
-          audioURL={this.state.audioDetails.url}
-          showUIAudio
-          handleAudioStop={(data) => this.handleAudioStop(data)}
-          handleAudioUpload={(data) => this.handleAudioUpload(data)}
-          handleCountDown={(data) => this.handleCountDown(data)}
-          handleReset={() => this.handleReset()}
-          // mimeTypeToUseWhenRecording={"audio/mpeg"} // For specific mimetype.
-          uploadButtonDisabled={true}
-        />
-      );
-    } */ else {
+    } else {
       return;
     }
   }
 
   render() {
-    const { view } = this.props;
+    const { view } = this.props
     return (
       <>
         <Container className={styles.container}>
@@ -112,8 +98,8 @@ class Tipoff extends React.Component {
           </form>
         </Container>
       </>
-    );
+    )
   }
 }
 
-export default Tipoff;
+export default Tipoff
