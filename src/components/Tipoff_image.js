@@ -21,6 +21,7 @@ function App() {
       () => {
         getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
           console.log("File available at", downloadURL)
+          alert("Image uploaded")
         })
       }
     )
@@ -28,7 +29,7 @@ function App() {
   return (
     <div className={style.container}>
       <div className={style.app}>
-        <h4>Submit you image here</h4>
+        <h4>Submit your image here</h4>
         <input
           className={style.customfile}
           type="file"

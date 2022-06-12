@@ -22,7 +22,7 @@ function App() {
     })
       .then(() => {
         console.log("hello")
-        alert("data added")
+        alert("Tip-Off submitted")
       })
       .catch((err) => {
         alert(err.message)
@@ -42,7 +42,7 @@ function App() {
         <input
           className={style.input}
           name="tipp"
-          placeholder="Insert you tipoff here..."
+          placeholder="Insert your tipoff here..."
           onChange={(event) => handleInput(event)}
         />
 

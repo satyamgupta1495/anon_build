@@ -5,9 +5,7 @@ import { Container } from "react-bootstrap"
 import styles from "../styles/Tipoff.module.css"
 // import Homepage from "./Homepage";
 
-// import "./App.css";
-// import { Axios } from "axios";
-// import { Axios } from "axios"
+
 
 class Tipoff extends React.Component {
   constructor(props) {
@@ -73,9 +71,9 @@ class Tipoff extends React.Component {
           withPreview={true}
           buttonText="Choose images"
         ></ImageUploader>
-      );
+      )
     } else {
-      return;
+      return
     }
   }
 

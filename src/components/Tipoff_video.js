@@ -6,7 +6,7 @@ import style from "../styles/Tipoff_Image.module.css"
 function App() {
   const [data, setData] = useState({})
   const handleSubmit = () => {
-    const storageRef = ref(storage, `audio/${data.name}`)
+    const storageRef = ref(storage, `videos/${data.name}`)
 
     const uploadTask = uploadBytesResumable(storageRef, data)
     uploadTask.on(
@@ -21,7 +21,7 @@ function App() {
       () => {
         getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
           console.log("File available at", downloadURL)
-          alert("Audio uploaded")
+          alert("Image uploaded")
         })
       }
     )
@@ -29,7 +29,7 @@ function App() {
   return (
     <div className={style.container}>
       <div className={style.app}>
-        <h4>Submit your audio here</h4>
+        <h4>Submit your Video here</h4>
         <input
           className={style.customfile}
           type="file"

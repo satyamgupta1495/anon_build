@@ -4,7 +4,6 @@ import { Route, Routes } from "react-router-dom"
 import Navbar from "./components/Navbar/Navbar"
 import Home from "./components/Home"
 import Questionaire from "./components/questionaire/Questionaire"
-import Tipoff from "./components/Tipoff"
 import Homepage from "./components/Homepage"
 import About from "./components/About"
 import Dashboard from "./components/Dashboard"
@@ -12,7 +11,7 @@ import LoginForm from "./components/Login/LoginForm"
 import Tipoff_image from "./components/Tipoff_image"
 import Tipoff_audio from "./components/Tipoff_audio"
 import Tipoff_text from "./components/Tipoff_text"
-import { useState } from "react"
+import Tipoff_video from "./components/Tipoff_video"
 
 function App() {
   return (
@@ -34,6 +33,7 @@ function App() {
         {/* <Route path="/tipoff2" element={<FileUpload view={"text"} />} /> */}
         <Route path="/tipoff_audio" element={<Tipoff_audio />} />
         <Route path="/tipoff_text" element={<Tipoff_text />} />
+        <Route path="/tipoff_video" element={<Tipoff_video />} />
 
         <Route path="/dash" element={<Dashboard />} />
         <Route path="/login" element={<LoginForm />} />

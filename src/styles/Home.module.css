@@ -1,3 +1,7 @@
+body {
+  background: url("../asset/img/worldmap.svg");
+}
+
 .card_container {
   display: flex;
   justify-content: center;
@@ -46,15 +50,18 @@ marquee {
   border-radius: 10px;
   /* background-color: red; */
 }
+
 .card_wrapper {
   margin: 10px;
   border-radius: 10px;
 }
+
 .card_footer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .button_size {
   text-align: center;
   height: 2.4rem;
