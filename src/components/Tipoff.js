@@ -72,7 +72,7 @@ class Tipoff extends React.Component {
           buttonText="Choose images"
         ></ImageUploader>
       );
-    } else if (view === "audio") {
+    } /* else if (view === "audio") {
       return (
         <Recorder
           className={styles.recorder}
@@ -87,7 +87,7 @@ class Tipoff extends React.Component {
           uploadButtonDisabled={true}
         />
       );
-    } else {
+    } */ else {
       return;
     }
   }
