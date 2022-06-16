@@ -1,9 +1,21 @@
 /* eslint-disable jsx-a11y/no-distracting-elements */
-import { Row, Col, Container, Card } from "react-bootstrap";
-import styles from "../styles/Home.module.css";
-import { Link } from "react-router-dom";
+import { Row, Button, Col, Container, Card } from "react-bootstrap"
+import styles from "../styles/Home.module.css"
+import { Link } from "react-router-dom"
+import { useNavigate } from "react-router"
+import { useUserAuth } from "../components/context/UserAuthContext"
 
 const Homepage = () => {
+  const { logOut, user } = useUserAuth()
+  const navigate = useNavigate()
+  const handleLogout = async () => {
+    try {
+      await logOut()
+      navigate("/")
+    } catch (error) {
+      console.log(error.message)
+    }
+  }
   return (
     <>
       <Container fluid className={styles.card_container}>
@@ -68,7 +80,7 @@ const Homepage = () => {
         >
           <Link
             style={{ color: "inherit", textDecoration: "inherit" }}
-            to={"/tipoff"}
+            to={"/questionaire"}
           >
             <button className={styles.submit_button}>Submit Tipoff</button>
           </Link>
@@ -133,9 +145,22 @@ const Homepage = () => {
             </Card>
           </Col>
         </Row>
+        <div className={styles.user_wrapper}>
+          <div className={styles.all}>
+            <div className={styles.user}>
+              Hello Welcome <br></br>
+              {user && user.email}
+            </div>
+            <div className={styles.user}>
+              <Button variant="primary" onClick={handleLogout}>
+                Log out
+              </Button>
+            </div>
+          </div>
+        </div>
       </Container>
     </>
-  );
-};
+  )
+}
 
-export default Homepage;
+export default Homepage

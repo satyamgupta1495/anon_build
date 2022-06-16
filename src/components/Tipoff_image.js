@@ -33,6 +33,7 @@ function App() {
         <input
           className={style.customfile}
           type="file"
+          accept="image/*"
           onChange={(event) => setData(event.target.files[0])}
         />
 

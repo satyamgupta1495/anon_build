@@ -1,19 +1,21 @@
 // import { Link } from "react-router-dom";
 // import styles from "../../styles/Style.module.css";
-import { Navbar, Stack, Button, Container, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import logo from "../../asset/img/col.png";
+import { Navbar, Stack, Button, Container, Nav } from "react-bootstrap"
+import { Link } from "react-router-dom"
+import logo from "../../asset/img/col.png"
 
 const HomeNav = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container style={{ width: "100%" }}>
-        <Navbar.Brand Link to="#home">
-          <img src={logo} alt="" />
+        <Navbar.Brand>
+          <Link to="/">
+            <img src={logo} alt="" />
+          </Link>
         </Navbar.Brand>
-        <Navbar.Brand Link to="/">
-          Anon-TipOff
-        </Navbar.Brand>
+        <Link to="/" style={{ "text-decoration": "none", cursor: "pointer" }}>
+          <Navbar.Brand>Anon-TipOff</Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -103,7 +105,7 @@ const HomeNav = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  );
-};
+  )
+}
 
-export default HomeNav;
+export default HomeNav

@@ -1,21 +1,24 @@
-.login {
+/* .login {
     height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    flex-direction: row;
     color: black;
-}
+} */
 
 .login__container {
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #dcdcdc;
+    background-color: #060F31;
     color: black;
     padding: 30px;
     border-radius: 10px;
+    max-width: 400px;
+    border: 1px solid white;
 }
 
 .login__textBox {
@@ -35,10 +38,4 @@
     text-align: center;
     color: white;
 
-    background-color: black;
-}
-
-
-.login div {
-    margin-top: 7px;
 }

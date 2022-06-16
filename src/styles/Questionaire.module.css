@@ -3,6 +3,7 @@
   font-family: "Verdana", cursive, sans-serif;
   color: #ffffff;
 }
+
 .main {
   background-color: #97adff;
   width: 100%;
@@ -104,6 +105,21 @@ button {
   border: 5px solid #234668;
   cursor: pointer;
 }
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  /* background-color: tomato; */
+}
+
+.submit a {}
+
 
 .correct {
   background-color: #2f922f;

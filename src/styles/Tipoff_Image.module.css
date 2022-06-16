@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 .container {
     width: 100%;
     display: flex;
@@ -14,6 +16,7 @@
     height: 30vh;
     width: 70vw;
     border-radius: 15px;
+
     background-color: rgb(255, 255, 255);
 }
 
@@ -46,6 +49,12 @@
     /* background-color: #4264dd; */
     color: black;
 
+}
+
+h4 {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    color: black;
 }
 
 .customfile::-webkit-file-upload-button {

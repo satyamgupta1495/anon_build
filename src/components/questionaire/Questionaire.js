@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react"
 import questions from "./Questions"
+import { Link } from "react-router-dom"
 import styles from "../../styles/Questionaire.module.css"
 
 const Questionaire = () => {
@@ -7,7 +8,6 @@ const Questionaire = () => {
   const [showScore, setshowScore] = useState(false)
   const [score, setScore] = useState(0)
   const [questionNo, setQuestionNo] = useState(1)
-
   const intervalRef = useRef()
   const [count, setCount] = useState(5)
 
@@ -53,9 +53,17 @@ const Questionaire = () => {
       <div className={styles.main}>
         <div className={styles.app1}>
           {showScore ? (
-            <div className={styles.score_section}>
-              Your Trust Score is: {score} / {questions.length * 10}{" "}
-            </div>
+            <>
+              <div className={styles.score_section}>
+                Your Trust Score is: {score} / {questions.length * 10}{" "}
+              </div>
+              <hr></hr>
+              <div className={styles.submit}>
+                <Link style={{ textDecoration: "none" }} to="/tipoff">
+                  <h4>Submit Tip-off</h4>
+                </Link>
+              </div>
+            </>
           ) : (
             <>
               <div className={styles.timer}>{count}</div>

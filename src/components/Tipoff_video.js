@@ -29,10 +29,11 @@ function App() {
   return (
     <div className={style.container}>
       <div className={style.app}>
-        <h4>Submit your Video here</h4>
+        <h4>Submit your video here</h4>
         <input
           className={style.customfile}
           type="file"
+          accept="video/*"
           onChange={(event) => setData(event.target.files[0])}
         />
 
