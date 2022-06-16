@@ -16,8 +16,8 @@ function Home() {
           <Card.Title>Tip-off as TEXT</Card.Title>
           <hr />
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            Here you can give your tipoff in the form of Text.
+            WRITE US YOUR CONCERN !! 
           </Card.Text>
         </Card.Body>
         <Card.Footer className={styles.card_footer}>
@@ -52,8 +52,8 @@ function Home() {
           <Card.Title>Tip-off as AUDIO</Card.Title>
           <hr />
           <Card.Text>
-            This card has supporting text below as a natural lead-in to
-            additional content.{" "}
+            Here you can give your tipoff in the form of Audio.
+            HAVE ANY VOICE RECORDING, PUT IT HERE{" "}
           </Card.Text>
         </Card.Body>
         <Card.Footer className={styles.card_footer}>
@@ -72,9 +72,8 @@ function Home() {
           <Card.Title>Tip-off as IMAGE</Card.Title>
           <hr />
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
+            Here you can give your tipoff in the form of Image.
+            HAVE AN IMAGE TO SUPPORT YOUR COMPLAIN, SHOW US !!
           </Card.Text>
         </Card.Body>
         <Card.Footer className={styles.card_footer}>
